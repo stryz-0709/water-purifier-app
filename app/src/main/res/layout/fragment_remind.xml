@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/White"
+    tools:context=".RemindFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Notification"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:id="@+id/interval_pref"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:hint="Enter interval (minutes)"
+        android:drawableLeft="@drawable/baseline_alarm_24"
+        android:drawablePadding="8dp"
+        android:textColor="@color/Black"/>
+
+    <Button
+        android:id="@+id/interval_btn"
+        android:layout_width="212dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/Ocean_Blue"
+        android:text="Set Interval"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+</LinearLayout>
+

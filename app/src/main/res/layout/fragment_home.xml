@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_today"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/current_day"
+            android:textSize="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/Ocean_Blue"/>
+
+        <TextView
+            android:id="@+id/current_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/Iceberg"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:layout_below="@+id/layout_today"
+        android:layout_marginTop="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout"
+            android:layout_marginTop="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_info_layout"
+                tools:ignore="MissingConstraints">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="10dp"
+                    android:id="@+id/card_add_info"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/add_info_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/add_info_image" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_below="@+id/add_info_image"
+                            android:background="@color/Zombie_Green">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="GET STARTED"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="15sp"
+                                android:textColor="@color/White"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Complete your info"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="25dp"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="26sp"
+                                android:textColor="@color/White"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/complete_info_card"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="60dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="15dp"
+                                android:textColor="@color/White"/>
+
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:text="More"
+                                android:id="@+id/add_info_more"
+                                android:textSize="18sp"
+                                android:textColor="@color/Zombie_Green"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:backgroundTint="@color/White"
+                                app:cornerRadius = "20dp"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="10dp"
+                    android:layout_below="@+id/card_add_info"
+                    android:id="@+id/card_graph"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:id="@+id/graph_image"
+                            android:src="@drawable/graph"
+                            android:layout_centerHorizontal="true"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/graph_image"
+                            android:background="@color/Sunrise_Orange">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RECOMMENDATIONS"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="15sp"
+                                android:textColor="@color/White"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="'Graphify' your data"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="25dp"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="26sp"
+                                android:textColor="@color/White"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/graph_card"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="60dp"
+                                android:textSize="15dp"
+                                android:textColor="@color/White"/>
+
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:text="More"
+                                android:id="@+id/graph_more"
+                                android:textSize="18sp"
+                                android:textColor="@color/Sunrise_Orange"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:backgroundTint="@color/White"
+                                app:cornerRadius = "20dp"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="10dp"
+                    android:layout_below="@+id/card_graph"
+                    android:id="@+id/card_share_info"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:id="@+id/share_info_image"
+                            android:src="@drawable/learn_share_info_image"
+                            android:layout_centerHorizontal="true"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/share_info_image"
+                            android:background="@color/Butterfly_Blue">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RECOMMENDATIONS"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="15sp"
+                                android:textColor="@color/White"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Share your info"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="25dp"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="26sp"
+                                android:textColor="@color/White"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/share_info_card"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="60dp"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="15dp"
+                                android:textColor="@color/White"/>
+
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:text="More"
+                                android:id="@+id/share_info_more"
+                                android:textSize="18sp"
+                                android:textColor="@color/Butterfly_Blue"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:backgroundTint="@color/White"
+                                app:cornerRadius = "20dp"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/card_share_info"
+                    app:cardElevation="10dp"
+                    android:id="@+id/card_add_reminder"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:id="@+id/add_reminder_image"
+                            android:src="@drawable/add_reminder_image"
+                            android:layout_marginTop="15dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/add_reminder_image"
+                            android:background="@color/Bright_Gold">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RECOMMENDATIONS"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="15sp"
+                                android:textColor="@color/White"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add reminders"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="25dp"
+                                android:textStyle="bold"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="26sp"
+                                android:textColor="@color/White"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_reminder_card"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="60dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="15dp"
+                                android:textColor="@color/White"/>
+
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:text="More"
+                                android:id="@+id/add_reminder_more"
+                                android:textSize="18sp"
+                                android:textColor="@color/Bright_Gold"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:backgroundTint="@color/White"
+                                app:cornerRadius = "20dp"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/blank_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/card_add_reminder"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="0"
+                    app:cardElevation="0dp"></androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

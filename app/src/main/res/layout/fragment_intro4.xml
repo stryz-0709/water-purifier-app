@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".Intro1Fragment">
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/ic_body_weight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/walkthrough_text_four"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/end_intro"
+        android:layout_width="212dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/Ocean_Blue"
+        android:text="Get started"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bkinno"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A production of Bach Khoa Innovation 2023"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SNIG's Water Purifier"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

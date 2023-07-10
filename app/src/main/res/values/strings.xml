@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Water Purifier</string>
+    <string name="nav">Navigation Drawer</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_notification_message_value">Hey… It\'s time to drink some water…</string>
+    <string name="str_continue">Continue</string>
+    <string name="enter_your_name_hint">Enter your name</string>
+    <string name="age_hint">Enter your age</string>
+    <string name="weight_hint">Enter your weight in Kg</string>
+    <string name="custom_intake_hint">Enter your custom intake target in ml</string>
+    <string name="workout_hint">Your daily work out time in min/day</string>
+    <string name="wakeup_hint">Your wake up time</string>
+    <string name="sleeping_hint">Your Sleep time</string>
+    <string name="tagline_text">Lets keep you hydrated…</string>
+    <string name="get_started">Get Started</string>
+    <string name="edit_info_text">Edit Your Information</string>
+    <string name="update">Update</string>
+    <string name="notif_setting_header">Notification Settings</string>
+    <string name="notif_messsage_hint">Notification Message</string>
+    <string name="notif_tone_hint">Notification Tone</string>
+    <string name="notif_freq_hint">Notification Frequency</string>
+    <string name="walkthrough_text_one">Water is 60 percent of your body weight. Your body depends on water to
+        survive.
+    </string>
+    <string name="walkthough_text_two">Lack of water can lead to dehydration. Even mild dehydration can drain you and
+        make you tired.
+    </string>
+    <string name="walkthrough_text_three">Every cell, tissue and organ in your body needs water to work properly.
+    </string>
+    <string name="walkthrough_text_four">We, members of team SNIG, are on the same page to change the way you drink water.
+    </string>
+    <string name="complete_info_card">Complete filling in your information to have a better tracking of your health and experience.
+    </string>
+    <string name="complete_info_graph_card">Graphs need your personal info such as weight and activity type to determine the best water consumption goal for you.
+    </string>
+    <string name="share_info_card">Create a fun environment by sharing your information with your friends and relatives.
+    </string>
+    <string name="add_reminder_card">Start your water drinking habits by setting new reminders periodically throughout the day.
+    </string>
+    <string name="graph_card">Track your water consumption progress of the day, or simply to know if it is high time the filter was changed or not.</string>
+    <string-array name="activities">
+        <item>Sedentary/Light Activity</item>
+        <item>Moderately Active</item>
+        <item>Active</item>
+        <item>Very Active</item>
+        <item>Pregnant/Breastfeeding</item>
+    </string-array>
+    <string-array name="climates">
+        <item>Tropical</item>
+        <item>Temperate</item>
+        <item>Cold</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="default_notification_channel_id">PushNotifications</string>
+    <string name="not_available_title">Under Construction</string>
+    <string name="not_available_content">Wooah! Come back later! We promise it will be great! :)</string>
+</resources>

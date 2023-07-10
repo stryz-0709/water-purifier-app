@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929878007593",
+    "project_id": "water-purifier-1c9cd",
+    "storage_bucket": "water-purifier-1c9cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929878007593:android:cd45fe5129fc9d66c12138",
+        "android_client_info": {
+          "package_name": "com.snig.waterpurifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929878007593-t7r4fb8nn4nnc4d2ksns1fg643kvuneg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdwqOcc8WvjzIicH5LQNA7DGoFb1TBVIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929878007593-t7r4fb8nn4nnc4d2ksns1fg643kvuneg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
